@@ -13,7 +13,7 @@ source 'https://rubygems.org'
  gem 'sdoc', '~> 0.4.0', group: :doc
  gem 'rails_12factor', group: :production
  gem 'pg', group: :production
- 
+ gem 'carrierwave'
 
 group :development, :test do
    gem 'byebug'
