@@ -28,12 +28,13 @@
     <div class='col-md-9'>
     	<% if @review.blank? %>
     		<h3>No reviews yet. Be the first to write one!</h3>
-    	 <% else %>
-			<% @review.each do |review| %>
-			<div class="star-rating" data-score=<%= review.rating %> ></div>
-			<p><%= review.comment %></p>
-			<% end %>
-    	 <% end %>
+	     <% else %>
+	       <% @reviews.each do |review| %>
+	-        <p><%= review.rating %></p>
+	+        <div class="star-rating" data-score= <%= review.rating %> ></div>
+	         <p><%= review.comment %></p>
+	       <% end %>
+     <% end %>
    </div>
 </div>
 
