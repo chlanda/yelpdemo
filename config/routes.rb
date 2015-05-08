@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :restaurants do
      resources :reviews, except: [:show, :index]
   end
-  
+
   get 'pages/about'
 
   get 'pages/contact'
@@ -28,7 +28,7 @@ Rails.application.routes.draw do
 
   # Example resource route with options:
   #   resources :products do
-  #     member do
+  #     member dos
   #       get 'short'
   #       post 'toggle'
   #     end
