@@ -20,6 +20,7 @@ source 'https://rubygems.org'
  gem "mini_magick"
  gem "devise"
  gem 'searchkick'
+ gem 'quiet_assets', group: :development
 
 group :development, :test do
    gem 'byebug'
